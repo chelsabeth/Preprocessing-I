@@ -57,3 +57,148 @@ html, body {
     height: 100%;
 }
 
+// MY CODE STARTS HERE!
+
+// variables
+@Background-color: silver;
+
+
+// mix-ins
+.flex-it {
+	display: flex;
+	justify-content: flex-end; 
+}
+
+
+.font-and-color {
+	font-family: 'Cutive Mono', monospace;
+	color: white;
+}
+
+//variables and mix-ins end
+
+
+
+body {
+	background: @Background-color;
+}
+
+
+
+.intro-section {
+	display: flex;
+	flex-direction: column;
+	margin-left: 9%;
+
+	h1 {
+		margin-left: 2.5%;
+		font-size: 35px;
+		.font-and-color;
+	}//closes H1
+
+		img {
+			height: 450px;
+			width: 450px;
+			display: flex;
+			margin-top: 2%;
+			margin-bottom: 2%;
+		} //closes img
+
+			p {
+				.font-and-color;
+				font-size: 25px;
+				
+			} //closes p tag
+
+} //closes intro-section
+
+
+
+nav {
+	.flex-it();
+	
+
+	a {
+		display: flex;
+		text-decoration: none;
+		font-size: 20px;
+		margin-top: 2%;
+		margin-right: 9%;
+		.font-and-color;
+		
+	} //closes a
+} //closes nav
+
+
+
+.skills {
+	// margin: 0 auto;
+	margin-left: 65%;
+	margin-top: -20%;
+	.font-and-color;
+	display: flex;
+	flex-direction: column;
+
+		h2 {
+			font-size: 35px;
+			margin-bottom: 3%;
+			margin-left: -3%;
+		} //closes H2
+
+			ul {
+				list-style-type: disc;
+				font-size: 25px;
+			} //closes UL
+
+				li {
+					margin-bottom: 2%;
+				} //closes LI
+} //closes skills
+
+
+
+
+.prior-jobs {
+	margin-top: 20%;
+	margin-left: 15%;
+	position: absolute;
+	.font-and-color;
+
+		h3 {
+			font-size: 30px;
+			margin-left: -5%;
+			margin-bottom: 10%;
+		}//closes H3
+
+			ul {
+				list-style-type: disc;
+				font-size: 25px;
+			} //closes UL
+
+				li {
+					margin-bottom: 5%;
+				} //closes LI
+} //closes prior-jobs
+
+
+
+.contact-me {
+	margin-left: 65%;
+	margin-top: 20%;
+	position: absolute;
+	.font-and-color();
+
+		h3 {
+			font-size: 30px;
+			margin-bottom: 10%;
+		} //closes H3
+
+			p {
+				font-size: 25px;
+				margin-bottom: 5%;
+			} //closes P
+} //closes contact-me
+
+// .background-img {
+// 	// background-image: url("../../greyflower.jpg"); 
+// }
